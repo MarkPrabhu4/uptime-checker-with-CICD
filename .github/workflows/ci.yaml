@@ -34,13 +34,13 @@ jobs:
 
       - name: Build Docker images
         run: |
-          docker build -t yourname/uptime-backend:latest ./backend
-          docker build -t yourname/uptime-frontend:latest ./frontend
+          docker build -t markprabhu/uptime-backend:latest ./backend
+          docker build -t markprabhu/uptime-frontend:latest ./frontend
 
       - name: Push images to Docker Hub
         run: |
-          docker push yourname/uptime-backend:latest
-          docker push yourname/uptime-frontend:latest
+          docker push markprabhu/uptime-backend:latest
+          docker push markprabhu/uptime-frontend:latest
 
       - name: Simulated Deploy
         run: |
